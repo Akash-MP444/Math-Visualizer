@@ -1,4 +1,4 @@
-# 🌌 Equation Universe
+# 🌌 Math - Visualizer
 
 > Interactive mathematical visualization platform for exploring equations in 2D, 3D, fractal space, and dynamical systems.
 
@@ -7,11 +7,6 @@
 ![Build](https://img.shields.io/badge/Build-Passing-success)
 ![Tests](https://img.shields.io/badge/Tests-28%20Passing-brightgreen)
 
-## 🚀 Live Demo
-
-**https://your-vercel-url.vercel.app**
-
----
 
 ## ✨ Features
 
@@ -31,30 +26,25 @@
 
 ## 📸 Screenshots
 
-### 3D Surface
+<h3>3D Surface</h3>
+<img width="800" alt="3D Surface" src="https://github.com/user-attachments/assets/470699bb-56bc-464f-a144-c324d7f93091">
 
-![Sphere](docs/sphere.png)
+<h3>Fractal Explorer</h3>
+<img width="500" alt="Mandelbrot" src="https://github.com/user-attachments/assets/d5c2c8d4-c20d-4852-b394-76421c40df80">
 
-### Fractal Explorer
+<h3>Strange Attractor</h3>
+<img width="500" alt="Lorenz" src="https://github.com/user-attachments/assets/86b9e76e-55ae-45a7-9d3e-d2df42c9b930">
 
-![Mandelbrot](docs/mandelbrot.png)
+<h3>2D Curves</h3>
+<img width="500" alt="Astroid" src="https://github.com/user-attachments/assets/56b4128f-f1e2-4b64-bb04-ee3d86846abb">
 
-### Strange Attractor
-
-![Lorenz](docs/lorenz.png)
-
-### 2D Curves
-
-![Astroid](docs/astroid.png)
-
----
 
 ## ⚡ Quick Start
 
 ```bash
-git clone https://github.com/Akash-MP444/equation-universe.git
+git clone https://github.com/Akash-MP444/Math-Visualizer.git
 
-cd equation-universe
+cd Math-Visualizer
 
 npm install
 npm run dev
@@ -182,5 +172,5 @@ vf_dipole
 
 **Akash MP**
 
-Built using mathematics, computational geometry, and modern web technologies.
+Built using mathematics, computational geometry, and web technologies.
 
