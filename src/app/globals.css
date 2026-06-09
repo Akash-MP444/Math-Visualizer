@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #03040a;
+  --bg2: #070b14;
+  --bg3: #0a0f1e;
+  --panel: #0d1425cc;
+  --panel2: #111929dd;
+  --border: #1a2840;
+  --border2: #243350;
+
+  /* Dynamic accent – overridden by theme */
+  --cyan: #00d4ff;
+  --cyan2: #00a8cc;
+  --cyan3: #007a99;
+  --green: #00ff88;
+  --green2: #00cc6a;
+  --purple: #a855f7;
+  --purple2: #7c3aed;
+  --amber: #f59e0b;
+  --amber2: #d97706;
+  --pink: #f472b6;
+  --red: #ef4444;
+  --text: #e2e8f0;
+  --text2: #94a3b8;
+  --text3: #475569;
+
+  --glow-cyan: 0 0 20px #00d4ff44, 0 0 40px #00d4ff22;
+  --glow-green: 0 0 20px #00ff8844, 0 0 40px #00ff8822;
+
+  /* Theme accent aliases */
+  --accent: var(--cyan);
+  --accent2: var(--cyan2);
+  --accent3: var(--cyan3);
+  --accent-sec: var(--green);
+  --accent-sec2: var(--green2);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+/* Scanline overlay */
+.scanline {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    #00000008 2px,
+    #00000008 4px
+  );
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes progressFill {
+  from { width: 0; }
+}
+
+/* Utility */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
