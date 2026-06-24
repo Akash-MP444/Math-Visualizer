@@ -7,6 +7,13 @@
 ![Build](https://img.shields.io/badge/Build-Passing-success)
 ![Tests](https://img.shields.io/badge/Tests-28%20Passing-brightgreen)
 
+---
+
+## Live Demo:
+
+https://math-visualizer-mp.vercel.app
+
+---
 
 ## ✨ Features
 
